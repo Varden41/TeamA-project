@@ -73,7 +73,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  z-index: 2;
+  z-index: 3;
 }
 .page-header__title--accent {
   font-family: $Secondaryfont;
@@ -84,7 +84,7 @@
   color: #d41443;
 }
 .page-header__content--buttons {
-  z-index: 2;
+  z-index: 3;
   margin-top: 20px;
   margin-bottom: 158px;
   margin-left: 20px;
@@ -96,7 +96,7 @@
   cursor: pointer;
   border: none;
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 7px 14.5px;
   font-family: $Primaryfont;
   font-weight: 400;
   font-size: 8px;
@@ -109,9 +109,16 @@
   cursor: pointer;
   border: none;
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 7px 13.5px;
   font-family: $Primaryfont;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+}
+
+.header__img {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 2;
 }
