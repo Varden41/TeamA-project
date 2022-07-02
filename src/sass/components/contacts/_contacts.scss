@@ -189,7 +189,12 @@
 
     
 }
-.contacts__period +.contacts__period{margin-top: 8px;}
+.contacts__period +.contacts__period
+{margin-top: 8px;
+@media screen and (min-width: 768px) {
+        margin-top: 12px;
+
+    }}
 .contacts__text,
 .contacts__mail, 
 .contacts__tel{
