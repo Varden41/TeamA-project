@@ -1,15 +1,16 @@
 .products {
     background-color: $background-secondary;
+    padding: 60 0 60 0px;
 }
-.products_content {
+.products__content {
     list-style-type:none
     }
 // *мобильная версия*/
 @media screen and (min-width: 320px) {
-.containers {
-    padding: 60px 20px 60 20px;
+.container {
+    padding: 0 20px 0 20px;
 }
-.products_label {   
+.products__label {   
 color:$products-subtext;
 Font-family: Titan One;
 Font-style: Regular;
@@ -19,7 +20,7 @@ text-align: center;
 Vertical-align: Top;
 text-transform:uppercase;
 }
-.products_header {
+.products__header {
 margin-top:15px;
 color: $products-title;
 Font-family: Titan One;
@@ -31,7 +32,7 @@ Vertical-align: Top;
 Letter-spacing: 4%;
 text-transform:uppercase;
 }
-.products_card{
+.products__card{
 box-sizing: border-box;
 width: 280px;
 height: 489px;
@@ -44,20 +45,20 @@ padding:160 39 40 41px;
 font-family: Titan One;
 font-size: 20px;
 font-weight: 400;
-line-height: 23px;
+line-height: 1.15;
 letter-spacing: 0.04em;
 text-align: center;
 text-transform:uppercase;
 color:$header-text-primary;
 }
-.products_card:nth-child(2) {
+.products__card:nth-child(2) {
     background-color:$products-ice-coffee ;
 }
-.products_card:last-child {
+.products__card:last-child {
 margin-bottom: 0;
 background-color: $products-milkshakes;
 }
-.products_content {
+.products__content {
     margin-top:148px;
 }
 .products__text {
@@ -66,12 +67,12 @@ background-color: $products-milkshakes;
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1,5;
     letter-spacing: 0.04em;
     text-align: center;
     color:$header-text-primary;
 }
-.products_button {
+.products__ button {
     margin: 32 81 0 79px;
 }
 }
