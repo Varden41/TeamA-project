@@ -1,0 +1,60 @@
+.footer {
+    background-color: $background-main;
+}
+.footer__slogan {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    max-width: 234px;
+
+    font-family: $Secondaryfont;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $footer-subtitle;
+}
+.footer__slogan-secondary {
+    margin-top: 16px;
+
+    font-family: $Secondaryfont;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $footer-title;
+}
+.footer__social-list {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 28px;
+    
+}
+.footer__social-item {
+    gap: 28px;
+}
+
+.footer__contacts {
+    display: block;
+    
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+   color: $footer-contacts; 
+}
+.footer__contacts-tel {
+    color: $footer-contacts-tel;
+}
+.footer__copiright {
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    color: $footer-copyright;
+}
