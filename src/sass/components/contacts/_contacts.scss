@@ -1,7 +1,9 @@
 
 .contacts {background-image: linear-gradient(to bottom, #ffffff 20%, #FFF5F6 20%, #FFF5F6 60% );}
-
-.conteiner {
+.contacts address{
+    font-style: normal;
+}
+.container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -51,6 +53,7 @@
     padding-top: 40px;
     padding-left: 32px;
     padding-right: 32px;
+    padding-bottom: 40px;
     
    
     
@@ -69,14 +72,21 @@
 .contacts__cards-section{
     border-bottom: 1px solid #E1E1E1;
     padding-bottom: 24px;
-    padding-top: 24px;
+    
     list-style: none;
     @media screen and (min-width: 768px) {
             padding-bottom: 32px;
-            padding-top: 32px;
+           
     
         }
 }
+.contacts__cards-section +.contacts__cards-section
+{padding-top: 24px;
+@media screen and (min-width: 768px) {
+        
+        padding-top: 32px;
+
+    }}
 .contacts__categories-cafe{
     margin-bottom: 20px;
     display: flex;
@@ -199,12 +209,16 @@
         }
 }
 .contacts__mail-tel{
+    display: flex;
+    justify-content: center;
     
+    flex-direction: column;
         
     padding-top: 24px;
-    padding-bottom: 40px;
+    
     @media screen and (min-width: 768px) {
-            padding-top: 24px;
+            
+        
             font-size: 14px;
         }
 }
@@ -227,6 +241,7 @@
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
+        line-height: 1.83;
 
     }
 
