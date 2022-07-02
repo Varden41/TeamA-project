@@ -1,6 +1,10 @@
+// Foter Main
+
 .footer {
     background-color: $background-main;
 }
+// Footer slogan
+
 .footer__slogan {
     display: flex;
     flex-direction: column;
@@ -24,6 +28,9 @@
     text-transform: uppercase;
     color: $footer-title;
 }
+
+// Footer social links
+
 .footer__social-list {
     display: flex;
     list-style: none;
@@ -34,12 +41,36 @@
     gap: 28px;
     
 }
+
 .footer__social-item {
-    gap: 28px;
+    display: flex;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
 }
+
+.footer__link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.footer__social-icon {
+    fill: $footer-social-link;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transform: cubic-bezier(.17, .67, 0, -0.68);
+    &:hover,
+    &:focus {
+        fill: $footer-social-link-active;
+    }
+}
+
+// Footer contacts
 
 .footer__contacts {
     display: block;
+    margin-bottom: 40px;
     
     font-weight: 700;
     font-size: 12px;
@@ -50,8 +81,15 @@
 .footer__contacts-tel {
     color: $footer-contacts-tel;
 }
+// Footer copyright
+
 .footer__copiright {
+    display: flex;
+    padding-inline: 90px;
+    padding-top: 16px;
+    margin-bottom: 3px;
     
+    border-top: 1px solid #E1E1E1;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
