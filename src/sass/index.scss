@@ -1,5 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import'./utils/breakpoints';
+@import'./utils/mixin';
 @import'./utils/variables';
 @import './base/general';
+@import './components/header/header';
+@import './components/header/header-menu';
+@import './components/header/header-navigation';
 @import'./components/footer/footer';
