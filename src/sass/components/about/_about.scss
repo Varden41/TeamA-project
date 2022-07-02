@@ -1,0 +1,205 @@
+.about__pretitle,
+.about__title {
+  text-align: center;
+}
+
+.about__pretitle {
+  font-family: $Secondaryfont;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  color: $advantages-subtext;
+
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+
+  @include mq(mob-only) {
+    margin-bottom: 15px;
+  }
+
+  @include mq(tab-only) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @include mq(desc) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.about__title {
+  font-family: $Secondaryfont;
+  color: $advantages-title;
+
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @include mq(mob-only) {
+    margin-bottom: 32px;
+  }
+
+  @include mq(tab-only) {
+    font-size: 48px;
+    line-height: 1.14;
+
+    margin-bottom: 40px;
+  }
+
+  @include mq(desc) {
+    font-size: 58px;
+    line-height: 66px;
+    margin-bottom: 1.13;
+  }
+}
+
+.about__pictures {
+  display: contents;
+}
+
+.about__img {
+  @include mq(mob-only) {
+    margin-bottom: 40px;
+  }
+}
+
+//    @include mq(tab-only){
+//       margin-bottom:60px;
+//    }
+// }
+.text__content1 {
+  font-family: $Primaryfont;
+  color: $advantages-text;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  width: 220px;
+  margin-bottom: 40px;
+
+  @include mq(tab-only) {
+    font-size: 14px;
+    line-height: 1.78;
+    width: 334px;
+  }
+
+  @include mq(desc) {
+    letter-spacing: 0.04em;
+
+    text-align: left;
+    width: 463px;
+
+    font-size: 16px;
+    line-height: 1.75;
+
+    margin-bottom: 32px;
+  }
+}
+
+.text__content2 {
+  font-family: $Primaryfont;
+  color: $contacts-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.58;
+  letter-spacing: 0.04em;
+  width: 220px;
+
+  margin-bottom: 40px;
+
+  @include mq(mob-only) {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  @include mq(tab-only) {
+    width: 334px;
+    line-height: 1.78;
+  }
+
+  @include mq(desc) {
+    text-align: left;
+    width: 463px;
+    line-height: 1.92;
+  }
+}
+
+.about__span {
+  display: flex;
+
+  @include mq(mob-only) {
+    margin-top: 20px;
+  }
+
+  @include mq(tab-only) {
+    margin-top: 27px;
+  }
+
+  @include mq(desc) {
+    margin-top: 32px;
+  }
+}
+
+.about__button {
+  font-family: $Primaryfont;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  background-color: $button-background;
+  align-items: center;
+  text-align: center;
+  border: none;
+
+  color: $about-title;
+
+  width: 176px;
+  height: 44px;
+  border-radius: 50;
+  border-radius: 22px;
+
+  @include mq(mob-only) {
+    margin-bottom: 40px;
+  }
+
+  @include mq(tab-only) {
+    margin-bottom: 60px;
+  }
+}
+
+.about__description-text {
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 60px;
+
+  @include mq(mob-only) {
+    display: block;
+  }
+
+  @include mq(tab-only) {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include mq(desc) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+.about__content {
+  @include mq(tab-only) {
+    margin-left: 32px;
+  }
+
+  @include mq(desc) {
+    margin-left: 99px;
+  }
+}
