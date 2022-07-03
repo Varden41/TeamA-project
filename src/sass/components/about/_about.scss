@@ -163,6 +163,15 @@
   border-radius: 50;
   border-radius: 22px;
 
+
+transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover , 
+  &:focus{
+   background-color: $about-hover ;
+  }
+
   @include mq(mob-only) {
     margin-bottom: 40px;
   }
@@ -170,6 +179,22 @@
   @include mq(tab-only) {
     margin-bottom: 60px;
   }
+}
+.about__wrapper{
+@include mq(desc){
+   display: flex;
+      background-image: url(../images/advantages/desc-milk.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin-inline: auto;
+
+      @include mq(retina) {
+            background-image: url(../images/advantages/desc-milk@2x.png);
+         }
+}
+
+
 }
 
 .about__description-text {
@@ -193,7 +218,20 @@
     padding-bottom: 40px;
   }
 }
-
+.about__box{
+   @include mq(mob-only){
+      display: flex;
+         background-image: url(../images/advantages/mob-milk.png);
+         background-repeat: no-repeat;
+         background-position: 25% 25%;
+         background-size: contain;
+         margin-inline: auto;
+      
+         @include mq(retina) {
+            background-image: url(../images/advantages/mob-milk@2x.png);
+         }
+   }
+}
 .about__content {
   @include mq(tab-only) {
     margin-left: 32px;
@@ -202,4 +240,11 @@
   @include mq(desc) {
     margin-left: 99px;
   }
+}
+// .button__img{
+//       margin-left: 13.6px;
+// }
+.icon__button{
+   
+margin-left: 13.6px;
 }
