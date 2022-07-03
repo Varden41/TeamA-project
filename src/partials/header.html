@@ -68,18 +68,77 @@
         How it's made?
       </button>
     </div>
+    <div class="page-header__content--advantages">
+      <picture>
+        <source
+          srcset="
+            ./images/header/header-milk-icon-desktop.png    1x,
+            ./images/header/header-milk-icon-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)" />
+        <source
+          srcset="
+            ./images/header/header-milk-icon-tablet.png    1x,
+            ./images/header/header-milk-icon-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)" />
+        <img
+          class="header__img--milk"
+          src="./images/header/header-milk-icon-tablet.png"
+          alt="milk"
+      /></picture>
+      <p class="page-header__content--text">Lorem ipsum</p>
+    </div>
     <div class="page-header__content--ellipse"></div>
     <picture>
       <source
         srcset="
-          ./images/header/header-icon.png    1x,
-          ./images/header/header-icon@2x.png 2x
+          ./images/header/header-icon-desktop.png    1x,
+          ./images/header/header-icon-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+      <source
+        srcset="
+          ./images/header/header-icon-tablet.png    1x,
+          ./images/header/header-icon-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+      <source
+        srcset="
+          ./images/header/header-icon-mobile.png    1x,
+          ./images/header/header-icon-mobile@2x.png 2x
         "
         media="(max-width: 767px)" />
       <img
         class="header__img"
-        src="./images/header/header-icon.png"
+        src="./images/header/header-icon-mobile.png"
         alt="ice cream"
     /></picture>
+    <picture>
+      <source
+        srcset="
+          ./images/header/header-tasty-icon-desktop.png    1x,
+          ./images/header/header-tasty-icon-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+      <source
+        srcset="
+          ./images/header/header-tasty-icon-tablet.png    1x,
+          ./images/header/header-tasty-icon-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+      <img
+        class="header__img--tasty"
+        src="./images/header/header-tasty-icon-tablet.png"
+        alt="tasty"
+    /></picture>
+    <!-- <a href="./index.html" class="page-header__content--btn3">
+      <svg class="header__img--btn--tablet" width="14" height="14">
+        <use href="./images/header/icons.svg#icon-logo"></use>
+      </svg>
+      <svg class="header__img--btn--desktop" width="26" height="26">
+        <use href="./images/header/icons.svg#icon-logo"></use>
+      </svg>
+    </a> -->
   </div>
 </header>

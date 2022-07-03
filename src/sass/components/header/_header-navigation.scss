@@ -11,9 +11,9 @@
 .navigation__item {
   border: 1px solid #e18298;
   position: relative;
-  color: #ffffff;
+  color: $header-text-primary;
   &--current {
-    color: #d41443;
+    color: $header-text-secondary;
   }
 }
 
@@ -29,6 +29,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #d41443;
+    color: $header-text-secondary;
   }
 }
