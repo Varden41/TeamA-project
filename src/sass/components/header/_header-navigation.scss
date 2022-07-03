@@ -6,6 +6,11 @@
   line-height: 1.29;
   list-style: none;
   text-decoration: none;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 1.31;
+  }
 }
 
 .navigation__item {
@@ -14,6 +19,12 @@
   color: $header-text-primary;
   &--current {
     color: $header-text-secondary;
+  }
+  @media screen and (min-width: $desktop) {
+    border: none;
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 }
 
@@ -30,5 +41,8 @@
   &:hover,
   &:focus {
     color: $header-text-secondary;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0;
   }
 }
