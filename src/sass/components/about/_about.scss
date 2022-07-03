@@ -81,7 +81,7 @@
   line-height: 1.58;
   width: 220px;
   margin-bottom: 40px;
-
+  text-align: left;
   @include mq(tab-only) {
     font-size: 14px;
     line-height: 1.78;
@@ -109,7 +109,7 @@
   line-height: 1.58;
   letter-spacing: 0.04em;
   width: 220px;
-
+  text-align: left;
   margin-bottom: 40px;
 
   @include mq(mob-only) {
@@ -163,13 +163,12 @@
   border-radius: 50;
   border-radius: 22px;
 
-
-transition-property: background-color;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover , 
-  &:focus{
-   background-color: $about-hover ;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $about-hover;
   }
 
   @include mq(mob-only) {
@@ -180,21 +179,19 @@ transition-property: background-color;
     margin-bottom: 60px;
   }
 }
-.about__wrapper{
-@include mq(desc){
-   display: flex;
-      background-image: url(../images/advantages/desc-milk.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      margin-inline: auto;
+.about__wrapper {
+  @include mq(desc) {
+    display: flex;
+    background-image: url(../images/advantages/desc-milk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-inline: auto;
 
-      @include mq(retina) {
-            background-image: url(../images/advantages/desc-milk@2x.png);
-         }
-}
-
-
+    @include mq(retina) {
+      background-image: url(../images/advantages/desc-milk@2x.png);
+    }
+  }
 }
 
 .about__description-text {
@@ -218,33 +215,134 @@ transition-property: background-color;
     padding-bottom: 40px;
   }
 }
-.about__box{
-   @include mq(mob-only){
-      display: flex;
-         background-image: url(../images/advantages/mob-milk.png);
-         background-repeat: no-repeat;
-         background-position: 25% 25%;
-         background-size: contain;
-         margin-inline: auto;
-      
-         @include mq(retina) {
-            background-image: url(../images/advantages/mob-milk@2x.png);
-         }
-   }
-}
-.about__content {
+.about__box {
+  @include mq(mob-only) {
+    background-image: url(../images/advantages/mob-milk.png);
+    background-repeat: no-repeat;
+    background-position: 25% 25%;
+    background-size: contain;
+    margin-inline: auto;
+
+    @include mq(retina) {
+      background-image: url(../images/advantages/mob-milk@2x.png);
+    }
+  }
   @include mq(tab-only) {
     margin-left: 32px;
   }
-
   @include mq(desc) {
     margin-left: 99px;
   }
 }
+// .about__content {
+//   @include mq(tab-only) {
+//     margin-left: 32px;
+//   }
+
+//   @include mq(desc) {
+//     margin-left: 99px;
+//   }
+// }
 // .button__img{
 //       margin-left: 13.6px;
 // }
-.icon__button{
+.icon__button {
+  margin-left: 13.6px;
+}
+.backdrop {
+   position: fixed;
+   top: 0;
+
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.2);
+
+   transition-property: opacity, visibility;
+  
+
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   @media screen and (max-height: 625px) {
+      overflow-y: scroll;
+   }
+}
+
+.backdrop.is-hidden {
+   visibility: hidden;
+   opacity: 0;
+   pointer-events: none;
+}
+
+.backdrop.is-hidden {
+   visibility: hidden;
+   opacity: 0;
+   pointer-events: none;
+
+   &.modal__window {
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+   }
+}
+
+.modal-window {
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: scale(1) translate(-50%, -50%);
+height: 305px;
+   width: 305px;
+   padding: 40px;
+   background-color: $products-ice-coffee;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+
+   transition-property: opacity, visibility, transform;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   @media (max-width: 320px) {
+         width: 310px;
+         height: 310px;
+         padding: calc(40 * (100vw / 480));
+            overflow-y: scroll;
+}
+@media (min-width:465px){
+   width: 455px;
+   height: 455px;
+}
+ @include mq(tab-only) {
+    top: 15%;
+    transform: translate(-50%, 0) scale(1);
+    width: 528px;
+    height: 581px;
+ }
+
+ @include mq(desc) {
+    width: 528px;
+    height: 581px;
+    padding: 40px 41px 40px 39px;
+ }
+}
+
+.button-close {
+   position: absolute;
+      top: 8px;
+      right: 8px;
    
-margin-left: 13.6px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+   background: $products-milkshakes;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      &:hover .icon__close {
+         fill: $products-ice-coffee;
+      }
+
+   
 }
