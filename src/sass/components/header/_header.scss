@@ -48,6 +48,13 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
   @media screen and (min-width: $tablet) {
     margin-top: 58px;
     margin-bottom: 20px;
@@ -60,9 +67,6 @@
     margin-right: 1px;
     width: 159px;
   }
-  // transition-property: background-color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-icon {
@@ -147,17 +151,19 @@
 
 .page-header__content--buttons {
   z-index: 3;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 158px;
   margin-left: 20px;
   @media screen and (min-width: $tablet) {
     margin-left: 32px;
-    margin-bottom: 0;
+    margin-bottom: 61px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     margin-top: 24px;
     margin-left: 16px;
+    margin-bottom: 108px;
   }
 }
 
@@ -186,6 +192,13 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 .header__img {
@@ -201,28 +214,41 @@
   }
 }
 
-.page-header__content--advantages {
-  display: none;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 32px;
-    margin-bottom: 16px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-top: 40px;
-    margin-left: 16px;
-    margin-bottom: 60px;
-  }
-}
+// .page-header__content--advantages {
+//   display: none;
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     align-items: center;
+//     margin-top: 20px;
+//     margin-left: 32px;
+//     margin-bottom: 16px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     margin-top: 40px;
+//     margin-left: 16px;
+//     margin-bottom: 60px;
+//   }
+// }
 
 .header__img--milk {
-  //   display: none;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+    @media screen and (min-width: $desktop) {
+      bottom: 60px;
+      left: 16px;
+    }
+  }
 }
 
 .page-header__content--text {
+  display: none;
   @media screen and (min-width: $tablet) {
+    margin-left: 184px;
+    margin-bottom: 81px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
@@ -234,6 +260,8 @@
       font-size: 14px;
       line-height: 1.43;
       width: 200px;
+      margin-left: 229px;
+      margin-bottom: 130px;
     }
   }
 }
@@ -253,14 +281,20 @@
 }
 
 .page-header__content--btn3 {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  margin-top: 7px;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    left: 184px;
+    bottom: 56px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+  }
   @media screen and (min-width: $desktop) {
     width: 26px;
     height: 26px;
-    margin-top: 20px;
+    left: 229px;
+    bottom: 84px;
   }
 }
 .page-header__menu--button-tablet {
@@ -283,6 +317,10 @@
     line-height: 1.31;
     width: 160px;
     padding: 10px 0;
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
   @media screen and (min-width: $desktop) {
     display: none;
@@ -295,12 +333,15 @@
 }
 
 .page-header__content--boxes {
-  position: absolute;
-  top: 92px;
-  right: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 92px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
   @media screen and (min-width: $desktop) {
     right: 16px;
     top: 152px;
@@ -314,7 +355,6 @@
   height: 44px;
   position: relative;
   margin-bottom: 16px;
-  //   align-items: center;
   @media screen and (min-width: $desktop) {
     width: 72px;
     height: 77px;
@@ -362,7 +402,7 @@
   text-align: center;
   @media screen and (min-width: $desktop) {
     font-size: 46px;
-    line-height: 1.15px;
+    line-height: 1.15;
   }
 }
 
@@ -374,7 +414,7 @@
   text-align: center;
   @media screen and (min-width: $desktop) {
     font-size: 14px;
-    line-height: 1.29px;
+    line-height: 1.29;
   }
 }
 

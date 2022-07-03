@@ -39,19 +39,21 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
-            <a href="./index.html" class="navigation__link">Home</a>
+            <a href="#home" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="./index.html" class="navigation__link">About us</a>
+            <a href="#about_us" class="navigation__link">About us</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">How it's made?</a>
+            <a href="#how_it's_made?" class="navigation__link"
+              >How it's made?</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Our products</a>
+            <a href="#our_products" class="navigation__link">Our products</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Contact</a>
+            <a href="#contacts" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -67,13 +69,61 @@
       ice cream made with
       <span class="page-header__title--accent">passion</span>
     </h1>
-    <div class="page-header__content--buttons">
-      <button class="page-header__content--btn1" type="button">Products</button>
-      <button class="page-header__content--btn2" type="button">
-        How it's made?
-      </button>
-    </div>
-    <div class="page-header__content--advantages">
+    <ul class="page-header__content--buttons">
+      <li>
+        <button class="page-header__content--btn1" type="button">
+          Products
+        </button>
+      </li>
+      <li>
+        <button class="page-header__content--btn2" type="button">
+          How it's made?
+        </button>
+      </li>
+    </ul>
+    <picture>
+      <source
+        srcset="
+          ./images/header/header-milk-icon-desktop.png    1x,
+          ./images/header/header-milk-icon-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+      <source
+        srcset="
+          ./images/header/header-milk-icon-tablet.png    1x,
+          ./images/header/header-milk-icon-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+      <img
+        class="header__img--milk"
+        src="./images/header/header-milk-icon-tablet.png"
+        alt="milk"
+    /></picture>
+    <div class="page-header__content--block">
+      <p class="page-header__content--text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <a href="./index.html" class="page-header__content--btn3"
+        ><picture>
+          <source
+            srcset="
+              ./images/header/header-btn3-desktop.png    1x,
+              ./images/header/header-btn3-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)" />
+          <source
+            srcset="
+              ./images/header/header-btn3-tablet.png    1x,
+              ./images/header/header-btn3-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)" />
+          <img
+            class="header__img--btn3"
+            src="./images/header/header-btn3-tablet.png"
+            alt="btn" /></picture
+      ></a>
+      <!-- <div class="page-header__content--advantages">
       <picture>
         <source
           srcset="
@@ -116,7 +166,7 @@
               src="./images/header/header-btn3-tablet.png"
               alt="btn" /></picture
         ></a>
-      </div>
+      </div> -->
       <ul class="page-header__content--boxes">
         <li class="page-header__content--box1">
           <div class="box-ellips"></div>
