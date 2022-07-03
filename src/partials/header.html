@@ -58,6 +58,11 @@
     </div>
   </div>
   <div class="page-header__content">
+    <button class="page-header__menu--button-tablet" type="button">
+      Buy now<svg class="button-icon" width="8" height="11">
+        <use href="./images/header/icons.svg#icon-buy-btn"></use>
+      </svg>
+    </button>
     <h1 class="page-header__title">
       ice cream made with
       <span class="page-header__title--accent">passion</span>
@@ -87,7 +92,43 @@
           src="./images/header/header-milk-icon-tablet.png"
           alt="milk"
       /></picture>
-      <p class="page-header__content--text">Lorem ipsum</p>
+      <div class="page-header__content--block">
+        <p class="page-header__content--text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a href="./index.html" class="page-header__content--btn3"
+          ><picture>
+            <source
+              srcset="
+                ./images/header/header-btn3-desktop.png    1x,
+                ./images/header/header-btn3-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ./images/header/header-btn3-tablet.png    1x,
+                ./images/header/header-btn3-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)" />
+            <img
+              class="header__img--btn3"
+              src="./images/header/header-btn3-tablet.png"
+              alt="btn" /></picture
+        ></a>
+      </div>
+      <div class="page-header__content--boxes">
+        <div class="page-header__content--box1">
+          <div class="box-ellips"></div>
+          <div class="box-numbers left">16</div>
+          <div class="box-title">cafes</div>
+        </div>
+        <div class="page-header__content--box2">
+          <div class="box-ellips"></div>
+          <div class="box-numbers">23</div>
+          <div class="box-title left">food trucks</div>
+        </div>
+      </div>
     </div>
     <div class="page-header__content--ellipse"></div>
     <picture>
@@ -132,13 +173,5 @@
         src="./images/header/header-tasty-icon-tablet.png"
         alt="tasty"
     /></picture>
-    <!-- <a href="./index.html" class="page-header__content--btn3">
-      <svg class="header__img--btn--tablet" width="14" height="14">
-        <use href="./images/header/icons.svg#icon-logo"></use>
-      </svg>
-      <svg class="header__img--btn--desktop" width="26" height="26">
-        <use href="./images/header/icons.svg#icon-logo"></use>
-      </svg>
-    </a> -->
   </div>
 </header>

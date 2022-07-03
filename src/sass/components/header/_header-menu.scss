@@ -63,9 +63,18 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  @media screen and (min-width: $tablet) {
+    right: 32px;
+  }
 }
 
-// .page-header__icon--menu {
+.page-header__icon--menu {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 34px;
+    right: 214px;
+  }
+}
 //   position: absolute;
 //   top: 16px;
 //   right: 10px;
