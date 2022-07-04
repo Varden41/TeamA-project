@@ -41,7 +41,6 @@ text-transform:uppercase;
 }
 .products__card{
 position:relative;
-box-sizing: border-box;
 width: 280px;
 height: 489px;
 border-radius : 24px;
@@ -139,13 +138,14 @@ background-color: $products-milkshakes;
     margin-top:148px;
 }
 .products__button {
-    box-sizing: border-box;
+    
     width: 40px;
     height: 40px;
     background-image: url(../images/products/pictures-product/button-min.png);
     background-size: contain;
-    border-radius: 50%;
+    border:none;
     margin: 32px 81 0 79px;
+    border-radius: 50%;
 }
 }
 
@@ -181,7 +181,6 @@ background-color: $products-milkshakes;
     }
     .products__card{
     position:relative;
-    box-sizing: border-box;
     width: 224px;
     height: 473px;
     border-radius : 24px;
@@ -269,6 +268,7 @@ background-color: $products-milkshakes;
     .products__content {
         margin-top:158px;
         display:flex;
+        justify-content: space-between;
     }
     .products__text {
         height: 150px;
@@ -282,14 +282,14 @@ background-color: $products-milkshakes;
         letter-spacing: 0.04em;
         color:$header-text-primary;
     }
-    .products__button {
-        box-sizing: border-box;
+    .products__button {  
         width: 40px;
         height: 40px;
         background-image: url(../images/products/pictures-product/button-min.png);
         background-size: contain;
-        border-radius: 50%;
+        border:none;
         margin:32 60 0 60px;
+        border-radius: 50%;
     }
 }
 
@@ -324,14 +324,13 @@ background-color: $products-milkshakes;
     }
     .products__card{
     position:relative;
-    box-sizing: border-box;
     width: 368px;
     height: 535px;
     border-radius : 24px;
     background-color: $products-ice-cream;
     margin-bottom: 0;
     padding:165 63 60 64px;
-    margin-right: 16px;
+    margin-right: 32px;
     }
     .products__card:last-child {
         margin-right: 0;
@@ -412,6 +411,8 @@ background-color: $products-milkshakes;
     .products__content {
         margin-top:281px;
         display:flex;
+        justify-content: space-between;
+       
     }
     .products__text {
         height: 106px;
@@ -426,12 +427,11 @@ background-color: $products-milkshakes;
         color:$header-text-primary;
     }
     .products__button {
-        box-sizing: border-box;
         width: 40px;
         height: 40px;
-        background-image: url(../images/products/pictures-product/button-min.png);
-        background-size: contain;
+        background-image: url(../images/products/pictures-product/button-min.png); 
+       border:none;
+        margin:60 100 0 100px;   
         border-radius: 50%;
-        margin:60 100 0 100px;
     }
 }
