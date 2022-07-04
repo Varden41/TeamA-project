@@ -1,32 +1,28 @@
 .gallery {
   background: linear-gradient($gallery-bgr2 47%, $gallery-bgr 35% 65%);
   padding: 60px 0;
+
   @include mq(tab) {
     display: flex;
     justify-content: center;
     padding-top: 64px;
     padding-bottom: 60px;
   }
-
-  @include mq(desc) {
-    padding: 120px 0;
-  }
 }
 .masonary {
-
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
     '.  .  a4 a4  .  .  .   '
-    '.  a2 a4 a4  .  a8 .    '
+    '.  .  a4 a4  .  a8 .    '
+    '.  a2  a4 a4 a6  a8 . '
     'a1 a2 a4 a4 a6  a8 a10 '
-    'a1 a3 a4 a4 a6  a9 a10 '
-    '.  a3 a5 .  a7  a9 .   '
-    '.  .  a5 .  a7  a9 .    '
-    '.  .  a5 .  a7 .   .   '
-    '.  .  .  .  .  .   .   ';
-    gap:2.5px;
+    'a1 a2 a4 a4 a6  a9 a10   '
+    'a1  a3  a4 a4 a7  a9 a10    '
+    '.  a3 a5 .  a7  a9   .   '
+    '.  a3  a5  .  a7  .   .   ';
+  gap: 2.5px;
 
   @include mq(tab) {
     gap: 4px;
@@ -37,10 +33,25 @@
   }
 }
 .item__grid {
+  @include mq(tab) {
+    gap: 4px;
+  }
+
+  @include mq(desc) {
+    gap: 8px;
+  }
+}
+
+.item__grid {
   display: block;
   & img {
     width: 100%;
   }
+
+  & img {
+    width: 100%;
+  }
+
   &:nth-child(1) {
     grid-area: a1;
   }
@@ -79,9 +90,5 @@
 
   &:nth-child(10) {
     grid-area: a10;
-  }
-
-  & img {
-    width: 100%;
   }
 }
