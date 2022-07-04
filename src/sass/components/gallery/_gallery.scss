@@ -8,6 +8,9 @@
     padding-top: 64px;
     padding-bottom: 60px;
   }
+  @include mq(desc) {
+     padding: 120px 0;
+  }
 }
 .masonary {
   display: grid;
