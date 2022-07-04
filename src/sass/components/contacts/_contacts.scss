@@ -367,7 +367,8 @@
     transform: translate(-50%, -50%) scale(0) rotate(180deg);
 }
 
-.modal {
+.contacts__modal {
+    height: 100%;
     width: 100%;
     position: absolute;
     
@@ -379,32 +380,46 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 40px;
+    padding-top: 40px;
 
 }
-.modal-field{
-    width: 100%;
+.contacts__modal-field{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.modal-close-btn {
+.modal-close-button {
     position: absolute;
+    z-index: 1;
     top: 10px;
-    right: 200px;
+    right: 10px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: transparent;
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    
+    
 }
 
-.close-button {
+
+.contacts__close-button-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .modal-close-btn:hover &,
