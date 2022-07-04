@@ -64,13 +64,13 @@
 .footer-social-wraper {
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-right: 5px;
+    padding-right: 5px;
     @media screen and (min-width: $tablet) {
         margin-bottom: 19px;
         margin-top: 60px;
     }
     @media screen and (min-width: $desktop) {
-        margin-right: 1px;
+        padding-right: 1px;
         margin-bottom: 0;
         margin-top: 12px;
     }
@@ -144,6 +144,7 @@
 .footer__contacts-tel {
     color: $footer-contacts-tel;
     text-decoration: none;
+    padding-left: 5px;
 }
 // Footer copyright
 
@@ -152,7 +153,7 @@
     justify-content: center;
     padding-inline: 90px;
     padding-top: 16px;
-    margin-bottom: 3px;
+    padding-bottom: 3px;
     
     border-top: 1px solid #E1E1E1;
     font-weight: 700;
