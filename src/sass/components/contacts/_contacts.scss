@@ -422,8 +422,8 @@
 .contacts__close-button-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .modal-close-btn:hover &,
-    .modal-close-btn:focus & {
+    .modal-close-button:hover &,
+    .modal-close-button:focus & {
         fill: #D41443;
     }
 }
