@@ -1,12 +1,12 @@
 <header class="page-header">
   <div class="container page-header--display">
     <a href="./index.html" class="page-header__logo">
-      <svg class="page-header__logo--icon" width="199" height="50">
+      <svg class="page-header__icon" width="199" height="50">
         <use href="./images/header/icons.svg#icon-logo"></use>
       </svg>
     </a>
     <button
-      class="page-header__button"
+      class="page-header__btn"
       aria-expanded="false"
       aria-controls="page-header__menu"
       type="button"
@@ -31,8 +31,8 @@
     </button>
 
     <div class="page-header__menu" data-menu id="page-header__menu">
-      <button class="page-header__menu--button" type="button">
-        Buy now<svg class="button-icon" width="8" height="11">
+      <button class="menu__btn" type="button">
+        Buy now<svg class="buy-now__icon" width="8" height="11">
           <use href="./images/header/icons.svg#icon-buy-btn"></use>
         </svg>
       </button>
@@ -59,24 +59,22 @@
       </nav>
     </div>
   </div>
-  <div class="page-header__content">
-    <button class="page-header__menu--button-tablet" type="button">
-      Buy now<svg class="button-icon" width="8" height="11">
+  <div class="hero">
+    <button class="hero__btn--buy-now" type="button">
+      Buy now<svg class="buy-now__icon" width="8" height="11">
         <use href="./images/header/icons.svg#icon-buy-btn"></use>
       </svg>
     </button>
-    <h1 class="page-header__title">
+    <h1 class="hero__title">
       ice cream made with
-      <span class="page-header__title--accent">passion</span>
+      <span class="hero__title--accent">passion</span>
     </h1>
-    <ul class="page-header__content--buttons">
-      <li class="content__item">
-        <a class="page-header__content--btn1" href="#our_products">Products</a>
+    <ul class="hero__list--btn">
+      <li class="hero__item--btn">
+        <a class="hero__link--first" href="#our_products">Products</a>
       </li>
-      <li class="content__item">
-        <a class="page-header__content--btn2" href="#how_it's_made?"
-          >How it's made?</a
-        >
+      <li class="hero__item--btn">
+        <a class="hero__link--second" href="#how_it's_made?">How it's made?</a>
       </li>
     </ul>
     <picture>
@@ -93,16 +91,16 @@
         "
         media="(min-width: 768px)" />
       <img
-        class="header__img--milk"
+        class="hero__icon--milk"
         src="./images/header/header-milk-icon-tablet.png"
         alt="milk"
     /></picture>
-    <div class="page-header__content--block">
-      <p class="page-header__content--text">
+    
+      <p class="hero__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
       </p>
-      <a href="./index.html" class="page-header__content--btn3"
+      <a href="./index.html" class="hero__link--third"
         ><picture>
           <source
             srcset="
@@ -117,68 +115,24 @@
             "
             media="(min-width: 768px)" />
           <img
-            class="header__img--btn3"
+            class="hero__icon--btn"
             src="./images/header/header-btn3-tablet.png"
             alt="btn" /></picture
       ></a>
-      <!-- <div class="page-header__content--advantages">
-      <picture>
-        <source
-          srcset="
-            ./images/header/header-milk-icon-desktop.png    1x,
-            ./images/header/header-milk-icon-desktop@2x.png 2x
-          "
-          media="(min-width: 1200px)" />
-        <source
-          srcset="
-            ./images/header/header-milk-icon-tablet.png    1x,
-            ./images/header/header-milk-icon-tablet@2x.png 2x
-          "
-          media="(min-width: 768px)" />
-        <img
-          class="header__img--milk"
-          src="./images/header/header-milk-icon-tablet.png"
-          alt="milk"
-      /></picture>
-      <div class="page-header__content--block">
-        <p class="page-header__content--text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <a href="./index.html" class="page-header__content--btn3"
-          ><picture>
-            <source
-              srcset="
-                ./images/header/header-btn3-desktop.png    1x,
-                ./images/header/header-btn3-desktop@2x.png 2x
-              "
-              media="(min-width: 1200px)" />
-            <source
-              srcset="
-                ./images/header/header-btn3-tablet.png    1x,
-                ./images/header/header-btn3-tablet@2x.png 2x
-              "
-              media="(min-width: 768px)" />
-            <img
-              class="header__img--btn3"
-              src="./images/header/header-btn3-tablet.png"
-              alt="btn" /></picture
-        ></a>
-      </div> -->
-      <ul class="page-header__content--boxes">
-        <li class="page-header__content--box1">
-          <div class="box-ellips"></div>
-          <p class="box-numbers left">16</p>
-          <p class="box-title">cafes</p>
+      <ul class="hero__list--box">
+        <li class="hero__item--box-first">
+          <div class="hero__ellips--small"></div>
+          <p class="hero__text--number left">16</p>
+          <p class="hero__text--product">cafes</p>
         </li>
-        <li class="page-header__content--box2">
-          <div class="box-ellips"></div>
-          <p class="box-numbers">23</p>
-          <p class="box-title left">food trucks</p>
+        <li class="hero__item--box-second">
+          <div class="hero__ellips--small"></div>
+          <p class="hero__text--number">23</p>
+          <p class="hero__text--product left">food trucks</p>
         </li>
       </ul>
     </div>
-    <div class="page-header__content--ellipse"></div>
+    <div class="hero__ellipse--large"></div>
     <picture>
       <source
         srcset="
@@ -199,7 +153,7 @@
         "
         media="(max-width: 767px)" />
       <img
-        class="header__img"
+        class="hero__icon--main"
         src="./images/header/header-icon-mobile.png"
         alt="ice cream"
     /></picture>
@@ -217,7 +171,7 @@
         "
         media="(min-width: 768px)" />
       <img
-        class="header__img--tasty"
+        class="hero__icon--tasty"
         src="./images/header/header-tasty-icon-tablet.png"
         alt="tasty"
     /></picture>
