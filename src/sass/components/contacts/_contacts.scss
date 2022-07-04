@@ -1,5 +1,12 @@
 
-.contacts {background-image: linear-gradient(to bottom, #ffffff 20%, #FFF5F6 20%, #FFF5F6 60% );}
+.contacts {
+    background-image: linear-gradient(to bottom, #ffffff 20%, #FFF5F6 20%, #FFF5F6 60% );
+    padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+            padding-bottom: 60px;
+    
+        }
+}
 .contacts address{
     font-style: normal;
 }
