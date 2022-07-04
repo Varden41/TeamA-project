@@ -3,12 +3,10 @@
 @import'./utils/mixin';
 @import'./utils/variables';
 @import './base/general';
-// @import './components/header/header';
-// @import './components/header/header-menu';
-// @import './components/header/header-navigation';
-
+@import './components/header/header';
+@import './components/header/header-menu';
+@import './components/header/header-navigation';
 @import'./components/products/products';
-
 @import'./components/about/about';
 @import'./components/advantages/advantages';
 @import'./components/contacts/contacts';
