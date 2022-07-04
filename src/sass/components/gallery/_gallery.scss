@@ -1,0 +1,97 @@
+.gallery {
+  background: linear-gradient($gallery-bgr2 47%, $gallery-bgr 35% 65%);
+  padding: 60px 0;
+
+  @include mq(tab) {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
+  @include mq(desc) {
+     padding: 120px 0;
+  }
+}
+.masonary {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    '.  .  a4 a4  .  .  .   '
+    '.  .  a4 a4  .  a8 .    '
+    '.  a2  a4 a4 a6  a8 . '
+    'a1 a2 a4 a4 a6  a8 a10 '
+    'a1 a2 a4 a4 a6  a9 a10   '
+    'a1  a3  a4 a4 a7  a9 a10    '
+    '.  a3 a5 .  a7  a9   .   '
+    '.  a3  a5  .  a7  .   .   ';
+  gap: 2.5px;
+
+  @include mq(tab) {
+    gap: 4px;
+  }
+
+  @include mq(desc) {
+    gap: 8px;
+  }
+}
+.item__grid {
+  @include mq(tab) {
+    gap: 4px;
+  }
+
+  @include mq(desc) {
+    gap: 8px;
+  }
+}
+
+.item__grid {
+  display: block;
+  & img {
+    width: 100%;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  &:nth-child(1) {
+    grid-area: a1;
+  }
+
+  &:nth-child(2) {
+    grid-area: a2;
+  }
+
+  &:nth-child(3) {
+    grid-area: a3;
+  }
+
+  &:nth-child(4) {
+    grid-area: a4;
+  }
+
+  &:nth-child(5) {
+    grid-area: a5;
+  }
+
+  &:nth-child(6) {
+    grid-area: a6;
+  }
+
+  &:nth-child(7) {
+    grid-area: a7;
+  }
+
+  &:nth-child(8) {
+    grid-area: a8;
+  }
+
+  &:nth-child(9) {
+    grid-area: a9;
+  }
+
+  &:nth-child(10) {
+    grid-area: a10;
+  }
+}
