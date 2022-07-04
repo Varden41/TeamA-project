@@ -3,6 +3,17 @@
 .footer {
     background-color: $background-main;
 }
+.container--footer__box {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 60px;
+        }
+    
+}
 // Footer slogan
 
 .footer__slogan {
@@ -24,6 +35,12 @@
         max-width: 340px;
         font-size: 26px;
         line-height: 1.15;
+        margin-left: 1px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: 477px;
+        font-size: 30px;
+        line-height: 1.13;
     }
 }
 .footer__slogan-secondary {
@@ -37,18 +54,36 @@
     color: $footer-title;
     @media screen and (min-width: $tablet) {
         font-size: 48px;
-
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 58px;
+        line-height: 1.14;
     }
 }
-
+// Footer wraper
+.footer-social-wraper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 5px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 19px;
+        margin-top: 60px;
+    }
+        @media screen and (min-width: $desktop) {
+            margin-right: 1px;
+            margin-bottom: 0;
+            margin-top: 12px;
+        }
+}
 // Footer social links
+
 
 .footer__social-list {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    margin-right: 5px;
-    margin-top: 40px;
+    
+    
     margin-bottom: 40px;
     gap: 28px;
     
@@ -82,16 +117,21 @@
 
 .footer__contacts {
     display: block;
-    margin-bottom: 40px;
+    
     
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
     text-align: right;
    color: $footer-contacts; 
+@media screen and (min-width: $tablet) {
+    font-size: 14px;
+    
+}
 }
 .footer__contacts-tel {
     color: $footer-contacts-tel;
+    text-decoration: none;
 }
 // Footer copyright
 
@@ -108,5 +148,12 @@
     line-height: 1.52;
     text-align: center;
     color: $footer-copyright;
+    @media screen and (min-width: $tablet) {
+        line-height: 1.86;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
     
 }
