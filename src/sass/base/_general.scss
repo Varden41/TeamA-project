@@ -3,8 +3,8 @@ h2,
 h3,
 ul,
 p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .hidden {
@@ -25,25 +25,29 @@ ul {
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 body {
-    font-family: $Primaryfont;
-    background-color: $background-main;
-    color: $text-primary;
+  font-family: $Primaryfont;
+  background-color: $background-main;
+  color: $text-primary;
+  &.menu-open .page-header {
+    overflow: hidden;
+  }
 }
+
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    };
-    @media screen and (min-width:$tablet) {
-        width: $tablet;
-    };
-    @media screen and (min-width:$desktop) {
-        width: $desktop;
-    };
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }

@@ -1,1 +1,227 @@
-<header></header>
+<header class="page-header">
+  <div class="container page-header--display">
+    <a href="./index.html" class="page-header__logo">
+      <svg class="page-header__logo--icon" width="199" height="50">
+        <use href="./images/header/icons.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <button
+      class="page-header__button"
+      aria-expanded="false"
+      aria-controls="page-header__menu"
+      type="button"
+      data-menu-button
+    >
+      <svg
+        class="page-header__icon--menu"
+        width="41"
+        height="36"
+        aria-label="Переключатель мобильного меню"
+      >
+        <use href="./images/header/icons.svg#icon-menu"></use>
+      </svg>
+      <svg
+        class="page-header__icon--close"
+        width="14"
+        height="14"
+        aria-label="Переключатель мобильного меню"
+      >
+        <use href="./images/header/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="page-header__menu" data-menu id="page-header__menu">
+      <button class="page-header__menu--button" type="button">
+        Buy now<svg class="button-icon" width="8" height="11">
+          <use href="./images/header/icons.svg#icon-buy-btn"></use>
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current">
+            <a href="#home" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about_us" class="navigation__link">About us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#how_it's_made?" class="navigation__link"
+              >How it's made?</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#our_products" class="navigation__link">Our products</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="page-header__content">
+    <button class="page-header__menu--button-tablet" type="button">
+      Buy now<svg class="button-icon" width="8" height="11">
+        <use href="./images/header/icons.svg#icon-buy-btn"></use>
+      </svg>
+    </button>
+    <h1 class="page-header__title">
+      ice cream made with
+      <span class="page-header__title--accent">passion</span>
+    </h1>
+    <ul class="page-header__content--buttons">
+      <li>
+        <button class="page-header__content--btn1" type="button">
+          Products
+        </button>
+      </li>
+      <li>
+        <button class="page-header__content--btn2" type="button">
+          How it's made?
+        </button>
+      </li>
+    </ul>
+    <picture>
+      <source
+        srcset="
+          ./images/header/header-milk-icon-desktop.png    1x,
+          ./images/header/header-milk-icon-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+      <source
+        srcset="
+          ./images/header/header-milk-icon-tablet.png    1x,
+          ./images/header/header-milk-icon-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+      <img
+        class="header__img--milk"
+        src="./images/header/header-milk-icon-tablet.png"
+        alt="milk"
+    /></picture>
+    <div class="page-header__content--block">
+      <p class="page-header__content--text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <a href="./index.html" class="page-header__content--btn3"
+        ><picture>
+          <source
+            srcset="
+              ./images/header/header-btn3-desktop.png    1x,
+              ./images/header/header-btn3-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)" />
+          <source
+            srcset="
+              ./images/header/header-btn3-tablet.png    1x,
+              ./images/header/header-btn3-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)" />
+          <img
+            class="header__img--btn3"
+            src="./images/header/header-btn3-tablet.png"
+            alt="btn" /></picture
+      ></a>
+      <!-- <div class="page-header__content--advantages">
+      <picture>
+        <source
+          srcset="
+            ./images/header/header-milk-icon-desktop.png    1x,
+            ./images/header/header-milk-icon-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)" />
+        <source
+          srcset="
+            ./images/header/header-milk-icon-tablet.png    1x,
+            ./images/header/header-milk-icon-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)" />
+        <img
+          class="header__img--milk"
+          src="./images/header/header-milk-icon-tablet.png"
+          alt="milk"
+      /></picture>
+      <div class="page-header__content--block">
+        <p class="page-header__content--text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a href="./index.html" class="page-header__content--btn3"
+          ><picture>
+            <source
+              srcset="
+                ./images/header/header-btn3-desktop.png    1x,
+                ./images/header/header-btn3-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ./images/header/header-btn3-tablet.png    1x,
+                ./images/header/header-btn3-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)" />
+            <img
+              class="header__img--btn3"
+              src="./images/header/header-btn3-tablet.png"
+              alt="btn" /></picture
+        ></a>
+      </div> -->
+      <ul class="page-header__content--boxes">
+        <li class="page-header__content--box1">
+          <div class="box-ellips"></div>
+          <p class="box-numbers left">16</p>
+          <p class="box-title">cafes</p>
+        </li>
+        <li class="page-header__content--box2">
+          <div class="box-ellips"></div>
+          <p class="box-numbers">23</p>
+          <p class="box-title left">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <div class="page-header__content--ellipse"></div>
+    <picture>
+      <source
+        srcset="
+          ./images/header/header-icon-desktop.png    1x,
+          ./images/header/header-icon-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+      <source
+        srcset="
+          ./images/header/header-icon-tablet.png    1x,
+          ./images/header/header-icon-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+      <source
+        srcset="
+          ./images/header/header-icon-mobile.png    1x,
+          ./images/header/header-icon-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)" />
+      <img
+        class="header__img"
+        src="./images/header/header-icon-mobile.png"
+        alt="ice cream"
+    /></picture>
+    <picture>
+      <source
+        srcset="
+          ./images/header/header-tasty-icon-desktop.png    1x,
+          ./images/header/header-tasty-icon-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+      <source
+        srcset="
+          ./images/header/header-tasty-icon-tablet.png    1x,
+          ./images/header/header-tasty-icon-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+      <img
+        class="header__img--tasty"
+        src="./images/header/header-tasty-icon-tablet.png"
+        alt="tasty"
+    /></picture>
+  </div>
+</header>
