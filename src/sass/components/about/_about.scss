@@ -274,6 +274,7 @@
 }
 
 .backdrop__about.is--hidden {
+  
    visibility: hidden;
    opacity: 0;
    pointer-events: none;
@@ -290,10 +291,12 @@
    top: 50%;
    left: 50%;
    transform: scale(1) translate(-50%, -50%);
-height: 305px;
-   width: 305px;
+   width: calc(100vw - 20px);
+  max-width: 528px;
+  
+  
    padding: 40px;
-   background-color: $products-ice-coffee;
+   background-color: #FFFFFF;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
@@ -301,29 +304,15 @@ height: 305px;
    transition-property: opacity, visibility, transform;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   @media (max-width: 320px) {
-         width: 310px;
-         height: 310px;
-         padding: calc(40 * (100vw / 480));
-            overflow-y: scroll;
+  @include mq(tab) {
+      width: 528px;
+      padding: 40px 41px 40px 39px;
+    }
+   
 }
-@media (min-width:465px){
-   width: 455px;
-   height: 455px;
-}
- @include mq(tab-only) {
-    top: 15%;
-    transform: translate(-50%, 0) scale(1);
-    width: 528px;
-    height: 581px;
- }
 
- @include mq(desc) {
-    width: 528px;
-    height: 581px;
-    padding: 40px 41px 40px 39px;
- }
-}
+ 
+
 
 .button__close {
    position: absolute;
@@ -338,11 +327,87 @@ height: 305px;
       justify-content: center;
       align-items: center;
    
-   background: $products-milkshakes;
+   background: #FFFFFF;
       border: 1px solid rgba(0, 0, 0, 0.1);
       &:hover .icon__close {
          fill: $products-ice-coffee;
       }
 
    
+}
+.modal-text-field{
+  margin-top: 10px;
+  padding-left: 3px;
+  padding-left: 3px;
+}
+
+.modal-title{
+  font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #D41443;
+    text-transform: uppercase;
+    @include mq(tab) {
+        font-size: 48px;
+        line-height: 55px;                 
+        text-align: center;
+        letter-spacing: 0.04em;
+      }
+    @include mq(desc) {
+        font-size: 58px;
+        line-height: 66px;
+        
+        letter-spacing: 0.06em;
+      } 
+    
+    
+}
+.modal-text1{
+  
+  font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+  
+    color: #000000;
+    @include mq(tab) {        
+        font-size: 14px;
+        line-height: 1.76;
+      }
+    
+      @include mq(desc) {
+        font-size: 16px;
+        line-height: 176%;
+      }
+
+
+  
+  
+    
+  
+    
+
+}
+.modal-text2{
+  margin-top: 10px;
+  font-family: 'DM Sans';    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;   
+  
+    color: #907E82;
+    @include mq(tab) {
+        font-size: 14px;
+        line-height: 1.76;
+      }
+    
+      @include mq(desc) {
+        font-size: 14px;
+        line-height: 1.94;
+      }
 }

@@ -96,6 +96,7 @@ body.modal-open {
 }
 
 .contacts__categories-cafe{
+    min-height: 16px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -105,6 +106,7 @@ body.modal-open {
     border-radius: 4px;
     width: 80px;
     @include mq(tab) {
+            min-height: 22px;
             width: 75px;
             margin-bottom: 32px;
     
@@ -337,11 +339,11 @@ body.modal-open {
 .contacts__modal {
     
     width: 100%;
-    height: 100%;
+    
     max-width: 600px;
     position: absolute; 
       
-    top: 70%;
+    top: 50%;
     left: 50%;
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1) rotate(0);
