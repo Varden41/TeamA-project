@@ -19,15 +19,15 @@
 }
 .background-container {
     margin-top: 32px;
-    margin-bottom: 16px;
+    
     background-color: #FAFAFA;
-    padding: 30px 50px 17px;
+    padding: 26px 50px 17px;
     
     margin-right: auto;
     margin-left: auto;
 
     @include mq(tab) {
-        padding: 20px 6px 17px;
+        padding: 20px 6px 36px;
         max-width: 620px;
 
     }
@@ -37,7 +37,15 @@
 
     }
 }
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 6px;
+    @include mq(tab) {
+            bottom: 10px;
 
+}}
 .text-container {
     position: relative;
     display: flex;
@@ -46,17 +54,20 @@
     
     padding: 0px 15px;
     min-width: 180px;
-    min-height: 261px;
+    min-height: 265px;
     margin-left: auto;
     margin-right: auto;    
     
     background-image:
-        repeating-linear-gradient(#FAFAFA 0px 30px,
-            #E1E1E1 30px 31px);
+        repeating-linear-gradient(#FAFAFA 0px 31px,
+            #E1E1E1 31px 32px);
 
     @include mq(tab) {
+        background-image:
+                repeating-linear-gradient(#FAFAFA 0px 35px,
+                    #E1E1E1 35px 36px);
         min-width: 608px;
-        min-height: 95px;
+        min-height: 108px;
     }
 
     @include mq(desc) {
@@ -102,7 +113,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    @include fonts(12px, 500, 2.55, null);
+    @include fonts(12px, 500, 2.58, null);
     text-align: center;
     color: #000;
 
@@ -137,7 +148,16 @@
     position: relative;
     margin-top: 36px;
     text-align: center;
-    color: #000000;}
+    color: #000000;
+    @include mq(tab) {
+            margin-top: 18px;
+    
+        }
+    @include mq(desc) {
+        margin-top: 36px;
+
+    }
+}
 
 .swiper {
     width: 100%;
