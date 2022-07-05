@@ -1,4 +1,6 @@
-
+body.modal-open {
+    overflow: hidden;
+}
 .contacts {
     background-image: linear-gradient(to bottom, #ffffff 20%, #FFF5F6 20%, #FFF5F6 60% );
     padding-bottom: 40px;
@@ -348,21 +350,22 @@
     margin-right: auto;
     max-width: 700px;
     height: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
+    padding:10px;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
-    padding-left: 50px;
-    padding-right: 50px;
+    
+    
+    @include mq(tab) {
+        padding: 50px;
+        }
 }
 
 .modal-close-button {
     position: absolute;
     z-index: 1;
-    top: 10px;
+    top: 30px;
     right: 10px;
     width: 30px;
     height: 30px;
@@ -373,6 +376,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    @include mq(tab) {
+            top: 10px;
+            right: 10px;
+        }
     
     
 }
