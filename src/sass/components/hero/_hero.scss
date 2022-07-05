@@ -1,6 +1,6 @@
 .hero {
   background-color: $header-background;
-  position: relative;
+
   @media screen and (max-width: 767px) {
     overflow: hidden;
   }
@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 
 .hero__ellipse--large {
