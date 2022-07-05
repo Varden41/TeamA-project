@@ -19,8 +19,6 @@
 .footer__slogan {
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
-    
 
     font-family: $Secondaryfont;
     font-size: 18px;
@@ -35,7 +33,6 @@
         max-width: 340px;
         font-size: 26px;
         line-height: 1.15;
-        margin-left: 1px;
     }
     @media screen and (min-width: $desktop) {
         max-width: 477px;
@@ -64,17 +61,16 @@
 .footer-social-wraper {
     margin-top: 40px;
     margin-bottom: 40px;
-    padding-right: 5px;
     @media screen and (min-width: $tablet) {
         margin-bottom: 19px;
         margin-top: 60px;
     }
     @media screen and (min-width: $desktop) {
-        padding-right: 1px;
         margin-bottom: 0;
         margin-top: 12px;
     }
 }
+
 // Footer social links
 
 
