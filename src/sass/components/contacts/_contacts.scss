@@ -1,5 +1,15 @@
+body.modal-open {
+    overflow: hidden;
+}
+.contacts {
+    background-image: linear-gradient(to bottom, #ffffff 20%, #FFF5F6 20%, #FFF5F6 60% );
+    padding-bottom: 40px;
+    
+    @include mq(desc) {
+        padding-bottom: 120px;
 
-.contacts {background-image: linear-gradient(to bottom, #ffffff 20%, #FFF5F6 20%, #FFF5F6 60% );}
+    }
+}
 .contacts address{
     font-style: normal;
 }
@@ -12,13 +22,13 @@
 
     width: 320px;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         width: 768px;
         padding-left: 16px;
         padding-right: 16px;
 
     }
-    @media screen and (min-width: 1200px) {
+    @include mq(desc) {
         width: 1200px;        
     }
     
@@ -49,45 +59,44 @@
 
 }
 .contacts__cards-item {
-    
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 40px;
-    
-   
-    
+    padding: 40px 32px;    
+      
     background-color: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     width: 100%;
+    padding-right: 75px;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
             width: calc((100% - 64px) / 3);
+            padding-right: 0;
     
-    }    
-  
+    } 
+    @include mq(desc) {
+        padding-right: 75px;
     
+    }
+     
 }
 .contacts__cards-section{
     border-bottom: 1px solid #E1E1E1;
     padding-bottom: 24px;
     
     list-style: none;
-    @media screen and (min-width: 768px) {
-            padding-bottom: 32px;
-           
+    @include mq(tab) {
+            padding-bottom: 32px;          
     
         }
+    &+& {
+        padding-top: 24px;
+        @include mq(tab) {
+            padding-top: 32px;
+        }
+    }
 }
-.contacts__cards-section +.contacts__cards-section
-{padding-top: 24px;
-@media screen and (min-width: 768px) {
-        
-        padding-top: 32px;
 
-    }}
 .contacts__categories-cafe{
+    min-height: 16px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -96,7 +105,8 @@
     background-color: #F0D1A5;
     border-radius: 4px;
     width: 80px;
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
+            min-height: 22px;
             width: 75px;
             margin-bottom: 32px;
     
@@ -112,117 +122,81 @@
     background-color: #C2E297;
     border-radius: 4px;
     width: 130px;
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
             width: 138px;
-            margin-bottom: 32px;
-    
-        }
-    
+            margin-bottom: 32px;    
+        }    
 }
 .contacts__category{
-    
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;   
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    
+    @include fonts(12px, 500, 1.86, 0.04em);           
+    text-transform: uppercase;        
     color: #FFFFFF;
-    @media screen and (min-width: 768px) {
-            font-size: 16px;
-    
+    @include mq(tab) {
+            font-size: 16px;    
         }
 }
 .contacts__city{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;      
-    
-    letter-spacing: 0.04em;
-    
+    @include fonts(12px, 500, 1.86, 0.04em);
+        
     color: #000000;
     margin-top: 0;
     margin-bottom: 8px;
-    @media screen and (min-width: 768px) {
-            font-size: 14px;
-    
+    @include mq(tab) {
+            font-size: 14px;    
         }
-    @media screen and (min-width: 1200px) {
-            font-size: 16px;}
-
-         
+        @include mq(desc) {
+            font-size: 16px;}         
 }
-.contacts__day{font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-
-    letter-spacing: 0.04em;
-
+.contacts__day{
+    @include fonts(12px, 500, 1.86, 0.04em);
     color: #000000;
     margin: 0;
     
-
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 14px;
-
     }
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desc) {
         font-size: 16px;
     }
 }
 
 .contacts__time{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;  
-    
-    
+    @include fonts(12px, 500, 1.86, null);
+      
     color: #FFA5BA;
-    @media screen and (min-width: 768px) {
-            font-size: 14px;
-    
+    @include mq(tab) {
+            font-size: 14px;    
         }
-    @media screen and (min-width: 1200px) {
+    @include mq(desc) {
             font-size: 16px;
-        }
-
-    
+        }    
 }
 .contacts__period +.contacts__period{   
     margin-top: 8px;
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         margin-top: 12px;}
     }
 .contacts__text,
 .contacts__mail, 
 .contacts__tel{
     text-decoration: none;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;    
-       
+    @include fonts(12px, 500, 1.5, null);    
+      
     color: #907E82;
-    @media screen and (min-width: 768px) {
-            font-size: 14px;
-    
+    @include mq(tab) {
+            font-size: 14px;    
         }
-    
-    @media screen and (min-width: 1200px) {
-            font-size: 16px;
-        }
+    @include mq(desc) {
+        font-size: 16px;
+    }
 }
 .contacts__mail-tel{
     display: flex;
-    justify-content: center;
-    
-    flex-direction: column;
-        
-    padding-top: 24px;
-    
-    @media screen and (min-width: 768px) {
-            
-        
+    justify-content: center;    
+    flex-direction: column;       
+    padding-top: 24px;    
+    @include mq(tab) {                   
             font-size: 14px;
         }
 }
@@ -230,32 +204,24 @@
 .contacts__mail,
 .contacts__tel {
     text-decoration: none;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
+    @include fonts(12px, 500, 1.5, null);
     color: #907E82;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
     
-        color: #D41443;}
+        color: #D41443;}    
 
-    
-
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 14px;
         line-height: 1.83;
 
     }
-
-    @media screen and (min-width: 1200px) {
+    @include mq(desc) {
         font-size: 16px;
     }
-    
 }
-
-
 
 .contacts__buttons{
     margin-top: 32px;
@@ -264,7 +230,7 @@
     justify-content: center;
     flex-direction: column;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         flex-direction: row;
         margin-top: 60px;}
 
@@ -274,9 +240,7 @@
     margin-bottom: 10px;
     min-height: 44px;
     min-width: 162px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+    @include fonts(16px, 700, 1.31, null);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,15 +252,16 @@
     cursor: pointer;
     font-family: inherit;
     text-align: center;
-   
-              
-            
-            
-    
-    @media screen and (min-width: 768px) {
+
+    @include mq(tab) {
             margin-bottom: 0;
             margin-right: 14px;
-        }
+            min-width: 192px;
+        } 
+    @include mq(desc) {
+        margin-right: 12px;
+        min-width: 198px;
+    }
 }
 
 .contacts__white-button {
@@ -304,9 +269,7 @@
    
     min-height: 44px;
     min-width: 162px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+    @include fonts(16px, 700, 1.31, null);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,6 +290,14 @@
         background-color: #ECEBEB;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
+        @include mq(tab) {
+            margin-bottom: 0;
+            min-width: 174px;
+        }
+        @include mq(desc) {
+
+            min-width: 168px;
+        }
 } 
 
 .contacts__button-icon{
@@ -338,9 +309,6 @@
 }
 .contacts__button-vector{   
     fill: #FFFFFF;
-    
-    
- 
 }
 .contacts__button-vector-red{
     fill: #D41443;
@@ -353,6 +321,7 @@
 }
 
 .backdrop {
+    z-index: 3;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -363,52 +332,72 @@
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(180deg);
-}
+// .backdrop.is-hidden .modal {
+//     transform: translate(-50%, -50%) scale(0) rotate(180deg);
+// }
 
-.modal {
+.contacts__modal {
+    
     width: 100%;
-    position: absolute;
     
-
-    
-    
+    max-width: 600px;
+    position: absolute; 
+      
     top: 50%;
     left: 50%;
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 40px;
+    
 
 }
-.modal-field{
-    width: 100%;
+.contacts__modal-field{
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    @include mq(tab) {
+            padding: 0;
+        }
+    
+    
 }
 
-.modal-close-btn {
+.modal-close-button {
     position: absolute;
-    top: 10px;
-    right: 200px;
+    z-index: 1;
+    top: 3px;
+    right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: transparent;
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    @include mq(tab) {
+            right: 3px;
+        }
+    
+    
+    
 }
 
-.close-button {
+
+.contacts__close-button-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .modal-close-btn:hover &,
-    .modal-close-btn:focus & {
+    .modal-close-button:hover &,
+    .modal-close-button:focus & {
         fill: #D41443;
     }
 }
