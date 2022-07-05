@@ -1,6 +1,6 @@
 .hero {
   background-color: $header-background;
-  overflow: hidden;
+
   position: relative;
 }
 
@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero__ellipse--large {
