@@ -2,17 +2,18 @@
   position: relative;
   padding-top: 8px;
   background-color: $header-background;
-  // width: 100vw;
-  overflow: hidden;
+  // overflow: hidden;
+
   @media screen and (min-width: $tablet) {
-    padding-top: 0;
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 37px;
   }
   &--display {
     display: flex;
     align-items: center;
-    @media screen and (min-width: $desktop) {
-      margin: 0;
-    }
   }
 }
 
@@ -20,13 +21,12 @@
   height: 50px;
   text-decoration: none;
   z-index: 2;
+  display: block;
   @media screen and (min-width: $tablet) {
-    margin-top: 32px;
-    margin-left: 17px;
+    margin-left: 16px;
   }
   @media screen and (min-width: $desktop) {
-    margin-top: 37px;
-    margin-left: 1px;
+    margin-left: 0;
   }
 }
 
@@ -34,21 +34,27 @@
   cursor: pointer;
   color: $header-text-secondary;
   background-color: #ffffff;
+
   margin-top: 60px;
   margin-bottom: 19px;
   margin-left: auto;
   margin-right: auto;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  text-align: center;
+
   border: none;
   border-radius: 22px;
   padding: 12px 0;
+
   width: 209px;
-  text-align: center;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
+
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,8 +70,8 @@
   @media screen and (min-width: $desktop) {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 141px;
-    margin-right: 1px;
+    margin-left: 0;
+    margin-right: 0;
     width: 159px;
   }
 }
@@ -74,3 +80,36 @@
   margin-left: 20px;
 }
 
+.hero__btn--buy-now {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+    margin-left: 10.5px;
+    border-radius: 22px;
+    background-color: $button-background;
+    color: $button-text;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    width: 160px;
+    padding: 12px 0;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
