@@ -348,25 +348,26 @@ body.modal-open {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    max-width: 700px;
+    max-width: 600px;
     height: 100%;
-    padding:10px;
-    padding-top: 30px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+    padding-left: 5px;
+    padding-right: 5px;
     @include mq(tab) {
-        padding: 50px;
+            padding: 0;
         }
+    
+    
 }
 
 .modal-close-button {
     position: absolute;
     z-index: 1;
-    top: 30px;
-    right: 10px;
+    top: 3px;
+    right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -377,9 +378,9 @@ body.modal-open {
     justify-content: center;
     cursor: pointer;
     @include mq(tab) {
-            top: 10px;
-            right: 10px;
+            right: 3px;
         }
+    
     
     
 }
