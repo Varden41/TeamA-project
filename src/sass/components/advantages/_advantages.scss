@@ -83,6 +83,7 @@ content: '';
   font-size: 12px;
   line-height: 1.66;
   letter-spacing: 0.02em;
+  padding-right: 50px;
   @include mq(tab-only) {
     font-size: 14px;
     line-height: 1.71;
