@@ -8,10 +8,6 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-  }
 
   & .page-header__icon--close {
     display: none;
@@ -86,10 +82,7 @@
 
 .page-header__icon--menu {
   margin-left: auto;
-  // @media screen and (min-width: $tablet) {
-  //   position: absolute;
-  //   top: 34px;
-  //   right: 214px;
-  //   background-color: transparent;
-  // }
+  &:active {
+    background-color: transparent;
+  }
 }
