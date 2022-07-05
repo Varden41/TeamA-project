@@ -58,7 +58,7 @@
         margin-bottom: 0;
         padding:118 32 40 32px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 368px;
         height: 535px;
         margin-bottom: 0;
@@ -73,7 +73,9 @@
     display:block;
     content:"";    
 
-@media screen and (min-width: $mobile) {
+     
+    @media screen and (min-width: $mobile){
+
         width: 280px;
         height: 280px;
         background-size: 280px 280px;
@@ -105,30 +107,95 @@
         height: 224px;
         background-size: 224px 224px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 368px;
         height: 394px;
         background-size: 368px 394px;
         transform: translatey(-261px);
     }
 }
-        
-.products__card--icecoffee::before {
-   background-image: url(../images/products/pictures-product/icecoffe2-min.png);
+@media screen and (min-width: $mobile) {
+.products__card::before {
+    background-image:url(../images/products/pictures-product/mobile/ice-cream.png);
+}
+.products__card:nth-child(2)::before {
+    background-image:url(../images/products/pictures-product/mobile/icecoffee.png)
+}
+.products__card:last-child::before {
+    background-image:url(../images/products/pictures-product/mobile/milkshake.png)
+}
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+.products__card::before {
+        background-image:url(../images/products/pictures-product/mobile/ice-cream2x.png);
     }
-.products__card--milkshake::before {
-    background-image: url(../images/products/pictures-product/milksheik2-min.png);
-        }
-      }
+.products__card:nth-child(2)::before {
+        background-image:url(../images/products/pictures-product/mobile/icecoffee2x.png)
+    }
+.products__card:last-child::before {
+        background-image:url(../images/products/pictures-product/mobile/milkshake2x.png)
+    }
+}
+}
+@media screen and (min-width: $tablet){
+    .products__card::before {
+        background-image:url(../images/products/pictures-product/tablet/icecream.png);
+    }
+    .products__card:nth-child(2)::before {
+        background-image:url(../images/products/pictures-product/tablet/icecoffee.png)
+    }
+    .products__card:last-child::before {
+        background-image:url(../images/products/pictures-product/tablet/milkshake.png)
+    }
+ @media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+.products__card::before {
+        background-image:url(../images/products/pictures-product/tablet/icecream2x.png);
+    }
+.products__card:nth-child(2)::before {
+        background-image:url(../images/products/pictures-product/tablet/icecoffee2x.png)
+    }
+.products__card:last-child::before {
+        background-image:url(../images/products/pictures-product/tablet/milkshake2x.png)
+    }
+}
+}
+@media screen and (min-width: $desktop){
+    .products__card::before {
+        background-image:url(../images/products/pictures-product/desktop/icecream.png);
+    }
+    .products__card:nth-child(2)::before {
+        background-image: url(../images/products/pictures-product/desktop/icecoffee.png);
+    }
+    .products__card:last-child::before {
+        background-image: url(../images/products/pictures-product/desktop/milkshake.png);
+    }
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+.products__card::before {
+        background-image:url(../images/products/pictures-product/desktop/icecream2x.png);
+    }
+.products__card:nth-child(2)::before {
+        background-image:url(../images/products/pictures-product/desktop/icecoffee2x.png)
+    }
+.products__card:last-child::before {
+        background-image:url(../images/products/pictures-product/desktop/milkshake2x.png)
+    }
+}
+}
+
 .products__title::after {
     position: absolute;
     content:"";
     width: 26px;
     height: 6px;        
     background-repeat: no-repeat;
-    background-image: url(../images/products/pictures-product/Ellipse\ 5-min.png),
-    url(../images/products/pictures-product/Ellipse\ 5-min.png),
-    url(../images/products/pictures-product/Ellipse\ 5-min.png);
+    background-image: url(../images/products/pictures-product/elements/Ellipse\ 6.png),
+    url(../images/products/pictures-product/elements/Ellipse\ 6.png),
+    url(../images/products/pictures-product/elements/Ellipse\ 6.png);
     background-position: left 0 top 0, left 10px top 0, right 0 top 0;
     @media screen and (min-width: $mobile){
         top:215px;
@@ -214,7 +281,7 @@ background-color: $products-milkshakes;
 .products__button {
     width: 40px;
     height: 40px;
-    background-image: url(../images/products/pictures-product/button-min.png);
+    background-image: url(../images/products/pictures-product/elements/button.png);
     background-size: contain;
     border:none;
     border-radius: 50%;
@@ -227,6 +294,11 @@ background-color: $products-milkshakes;
     @media screen and (min-width: $desktop){
         margin:60 100 0 100px;
     }
+    @media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+background-image:url(../images/products/pictures-product/elements/button2x.png)
+}
 }
     
 
