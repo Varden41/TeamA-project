@@ -279,7 +279,7 @@
     z-index: 2;
     @media screen and (min-width: $desktop) {
       font-size: 14px;
-      line-height: 1.43;
+      line-height: 1.4;
       width: 200px;
       margin-left: 229px;
       margin-bottom: 130px;
@@ -374,6 +374,7 @@
   @media screen and (min-width: $desktop) {
     width: 72px;
     height: 77px;
+    margin-bottom: 15px;
   }
 }
 
