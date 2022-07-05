@@ -10,8 +10,7 @@
      color:$products-subtext;
      Font-family: $Secondaryfont;
      Line-height: 1.16;
-     text-align: center;
-    
+     text-align: center; 
      text-transform:uppercase;
 @media screen and (min-width: $mobile){
     Font-size: 18px;
@@ -73,13 +72,35 @@
     left:0;
     display:block;
     content:"";    
-    background-image:url(../images/products/pictures-product/icecream-min.png); 
-    @media screen and (min-width: $mobile){
+
+@media screen and (min-width: $mobile) {
         width: 280px;
         height: 280px;
         background-size: 280px 280px;
-    }
-    @media screen and (min-width: $tablet) {
+.products__card--icecream::before {
+            background-image:url(./images/products/pictures-product/icecream-min.png);
+        }   
+.products__card--icecoffee::before {
+            background-image: url(./images/products/pictures-product/icecoffe-min.png);
+        } 
+.products__card--milkshake::before {
+            background-image: url(./images/products/pictures-product/milksheik-min.png);
+        }
+@media (min-device-pixel-ratio:2),
+       (min-resolution:192dpi),
+       (min-resolution:2dppx){
+.products__card--icecream::before  {
+    background-image: url(./images/products/pictures-product/icecream2-min.png);
+}  
+.products__card--icecoffee::before {
+    background-image:url(./images/products/pictures-product/icecoffe2-min.png);
+}
+.products__card--milkshake::before {
+    background-image:url(./images/products/pictures-product/milksheik2-min.png);
+}
+       }
+
+@media screen and (min-width: $tablet) {
         width: 224px;
         height: 224px;
         background-size: 224px 224px;
@@ -91,13 +112,7 @@
         transform: translatey(-261px);
     }
 }
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx)  {
-.products__card--icecream::before {
-        background-image: url(../images/products/pictures-product/icecream2-min.png);
-    }       
+        
 .products__card--icecoffee::before {
    background-image: url(../images/products/pictures-product/icecoffe2-min.png);
     }
@@ -170,12 +185,8 @@
         font-size: 16px;
     }
 }
-.products__card--icecoffee::before {
-    background-image: url(../images/products/pictures-product/icecoffe-min.png);
-}
-.products__card--milkshake::before {
-    background-image: url(../images/products/pictures-product/milksheik-min.png);
-}
+
+
 .products__card:nth-child(2) {
     background-color:$products-ice-coffee ;
 }
