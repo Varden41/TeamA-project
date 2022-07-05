@@ -3,37 +3,20 @@
     padding: 60 0 60 0px;
 }
 .products__content {
-    list-style-type:none;
-    margin:0;
-    padding:0; 
-    }
-    border-box {
-        margin:0;
-        padding:0;
-    }
-.container {
-  @media screen and (min-width: 320px) {
-    padding: 0 20px 0 20px;
+    justify-content: center;
 }
-@media screen and (min-width: 768px){
-    padding: 0 32px 0 32px;
-}
-@media screen and (min-width: 1200px){
-    padding: 0 16px 0 16px;
-}
-}
+
 .products__label {   
      color:$products-subtext;
-     Font-family: Titan One;
-     Font-style: Regular;
+     Font-family: $Secondaryfont;
      Line-height: 1.16;
      text-align: center;
-     Vertical-align: Top;
+    
      text-transform:uppercase;
-@media screen and (min-width: 320px){
+@media screen and (min-width: $mobile){
     Font-size: 18px;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: $tablet){
     Font-size: 26px;
 }
 @media screen and (min-width: 1200px) {
@@ -42,18 +25,16 @@
 }
 .products__header { 
     color: $products-title;
-    Font-family: Titan One;
-    Font-style: Regular;  
+    Font-family: $Secondaryfont;     
     Line-height: 1.14;
-    text-align: center;
-    Vertical-align: Top;
+    text-align: center;  
     Letter-spacing: 0.04em;
     text-transform:uppercase;
-    @media screen and (min-width: 320px){
+    @media screen and (min-width: $mobile){
         margin-top:15px;
         Font-size: 34px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         margin-top:18px;
         Font-size: 48px;
     }
@@ -66,25 +47,23 @@
     position:relative; 
     border-radius : 24px;
     background-color: $products-ice-cream;
-    @media screen and (min-width: 320px){
+    @media screen and (min-width: $mobile){
         width: 280px;
         height: 489px;
         margin-bottom:140px;
-        padding:140 39 40 41px;
+        padding:160 39 40 41px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 224px;
         height: 473px;
         margin-bottom: 0;
         padding:118 32 40 32px;
-        gap:16px;
     }
     @media screen and (min-width: 1200px) {
         width: 368px;
         height: 535px;
         margin-bottom: 0;
         padding:165 63 60 64px;
-        gap:32px;
         }
         }
 .products__card::before {
@@ -95,12 +74,12 @@
     display:block;
     content:"";    
     background-image:url(../images/products/pictures-product/icecream-min.png); 
-    @media screen and (min-width: 320px){
+    @media screen and (min-width: $mobile){
         width: 280px;
         height: 280px;
         background-size: 280px 280px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 224px;
         height: 224px;
         background-size: 224px 224px;
@@ -118,20 +97,10 @@
   (min-resolution: 2dppx)  {
 .products__card::before {
         background-image: url(../images/products/pictures-product/icecream2-min.png);
-    }
-  }        
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx)  {
+    }       
 .products__card:nth-child(2)::before {
-   background-image: url(../images/products/pictures-product/icecream2-min.png);
+   background-image: url(../images/products/pictures-product/icecoffe2-min.png);
     }
-  }
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx)  {
 .products__card:last-child::before {
     background-image: url(../images/products/pictures-product/milksheik2-min.png);
         }
@@ -146,58 +115,59 @@
     url(../images/products/pictures-product/Ellipse\ 5-min.png),
     url(../images/products/pictures-product/Ellipse\ 5-min.png);
     background-position: left 0 top 0, left 10px top 0, right 0 top 0;
-    @media screen and (min-width: 320px){
+    @media screen and (min-width: $mobile){
         top:215px;
         left:127px;
     }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
     top:173px;
     left:99px;
     }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             top:231px;
             left:172px;
         }
     }   
 .products__title{
-    font-family: Titan One;
-    font-size: 20px;
+    font-family: $Secondaryfont;
     font-weight: 400;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-align: center;
     text-transform:uppercase;
     color:$header-text-primary;       
-    @media screen and (min-width: 320px){
-        margin-top:0px;
+    margin-top:0px;
+    @media screen and (min-width: $mobile) {
+        font-size: 20px;
     }
-    @media screen and (min-width: 768px){
-        margin-top:20px;
-     }
-    @media screen and (min-width: 1200px) {
-        margin-top:0px;
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
     }
-}
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+    }
+    }
 .products__text {    
     margin-top: 70px;
     text-align: center;
-    font-family: DM Sans;
-    Font-style: Bold;
-    font-size: 14px;
+    font-family: $Primaryfont;
     font-weight: 700;    
     letter-spacing: 0.04em;
     color:$header-text-primary;
-    @media screen and (min-width: 320px){
+    @media screen and (min-width: $mobile){
         height: 124px;
         line-height: 1.65;
+        font-size: 14px;
     }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         height: 150px;
         line-height: 1.78;
+        font-size: 14px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: $desktop){
         height: 106px;
         line-height: 1.75;
+        font-size: 16px;
     }
 }
 .products__card:nth-child(2)::before {
@@ -211,23 +181,23 @@
 }
 .products__card:last-child { 
 background-color: $products-milkshakes;
-@media screen and (min-width: 320px) {
+@media screen and (min-width: $mobile) {
     margin-bottom: 0;
 }
 }
 .products__content {
-    @media screen and (min-width: 320px){
+    @media screen and (min-width: $mobile){
     margin-top:148px;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: $tablet){
     margin-top:158px;
     display:flex;
-    justify-content: space-between;
+    gap:16px;
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: $desktop){
     margin-top:281px;
     display:flex;
-    justify-content: space-between;
+    gap:32px;
 }
 }
 .products__button {
@@ -237,13 +207,13 @@ background-color: $products-milkshakes;
     background-size: contain;
     border:none;
     border-radius: 50%;
-    @media screen and (min-width: 320px){
+    @media screen and (min-width: $mobile){
         margin: 32px 81 0 79px;
     }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         margin:32 60 0 60px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: $desktop){
         margin:60 100 0 100px;
     }
 }
