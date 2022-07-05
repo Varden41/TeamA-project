@@ -291,7 +291,7 @@
    top: 50%;
    left: 50%;
    transform: scale(1) translate(-50%, -50%);
-   width: 100%;
+   width: calc(100vw - 20px);
   max-width: 528px;
   
   
