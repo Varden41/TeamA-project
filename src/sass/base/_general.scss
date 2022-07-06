@@ -49,8 +49,8 @@ body {
     width: 100vw;
   }
 
-  @media screen and (min-width: $mobile2) {
-    width: $mobile2;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
   @media screen and (min-width: $tablet) {
