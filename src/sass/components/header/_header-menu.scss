@@ -48,6 +48,7 @@
 }
 
 .page-header__menu {
+  animation: animatemenu 500ms;
   background-color: $header-menu;
   z-index: 999;
   width: 100%;
@@ -73,7 +74,14 @@
     align-items: center;
   }
 }
-
+@keyframes animatemenu {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .page-header__icon--close {
   position: absolute;
   top: 20px;
