@@ -19,6 +19,7 @@
 }
 
 .hero__ellipse--large {
+  animation: animate125 3000ms infinite 1000ms;
   width: 346px;
   height: 344px;
   border-radius: 50%;
@@ -42,6 +43,22 @@
     bottom: 76px;
   }
 }
+
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 .hero__title {
   margin-top: 136px;
@@ -311,6 +328,7 @@
 }
 
 .hero__ellips--small {
+  animation: animateellipssmall 3000ms infinite 3000ms;
   width: 16px;
   height: 16px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -326,7 +344,17 @@
     height: 30px;
   }
 }
-
+@keyframes animateellipssmall {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: translate(-10px, -5px);
+  }
+  100% {
+    transform: scale(1), translate(-5px, -10px);
+  }
+}
 .hero__text--number {
   font-family: $Secondaryfont;
   color: $header-text-secondary;
