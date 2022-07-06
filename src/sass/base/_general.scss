@@ -39,27 +39,35 @@ body {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  @media screen and (min-width: $mobile) {
-    width: 100vw;
-  }
 
-  @media screen and (min-width:480px) {
+
+  width: 100vw;
+
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
 
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
+  @include mq(tab) {
+    width: 768px;
     padding-left: 16px;
     padding-right: 16px;
+
   }
 
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
+  @include mq(tab) {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+
   }
+
+  @include mq(desc) {
+    width: 1200px;
+  }
+
 }

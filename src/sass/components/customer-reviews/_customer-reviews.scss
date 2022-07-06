@@ -50,11 +50,9 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
     padding: 0px 15px;
-    min-width: 180px;
-    min-height: 265px;
+    min-width: 180px;    
     margin-left: auto;
     margin-right: auto;    
     
@@ -80,7 +78,7 @@
 .text-container::before {
     position: absolute;
     left: 0;
-    top: -16px;       
+    top: -16px;     
 
     content: "";
     background-image: url("../images/customer-reviews/icon-test.svg");
@@ -97,7 +95,8 @@
     width: 32px;
     height: 4px;
     top: -16px;
-    right: 127px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     @include mq(tab) {
             right: 355px;   
     
@@ -108,8 +107,8 @@
         }
 }
 .customer__text {
-    position: absolute;   
-    max-width: 157px;
+    width: 100%;
+    z-index: 1;    
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -127,7 +126,6 @@
         @include fonts(16px, 500, 1.86, 0.04em);
         
     }
-
 }
 
 .customer-reviews__section-title {
@@ -150,8 +148,7 @@
     text-align: center;
     color: #000000;
     @include mq(tab) {
-            margin-top: 18px;
-    
+            margin-top: 18px;    
         }
     @include mq(desc) {
         margin-top: 36px;
@@ -168,8 +165,7 @@
 
 .swiper-slide {
     text-align: center;
-    padding-bottom: 34px;
-    
+    padding-bottom: 34px;    
     @include mq(tab) {
             padding-bottom: 50px;
         }
