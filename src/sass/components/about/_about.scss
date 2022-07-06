@@ -1,5 +1,7 @@
 .about {
+  padding-top: 60px;
  @include mq(mob-only){
+  
    background-image: url(../images/about/about-small-desc.png),
    url(../images/about/about-big-desc.png);
  }
