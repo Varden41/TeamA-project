@@ -4,6 +4,24 @@
 }
 .products__content {
     justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    @media screen and (min-width: $mobile){
+        margin-top:148px;
+    }
+    @media screen and (min-width: $tablet){
+        margin-top:158px;
+        
+    }
+    @media screen and (min-width: $desktop){
+        margin-top:281px;
+    }
 }
 
 .products__label {   
@@ -46,30 +64,34 @@
     position:relative; 
     border-radius : 24px;
     background-color: $products-ice-cream;
-    @media screen and (min-width: $mobile){
-        width: 280px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+        width: 100vw;
         height: 489px;
         margin-bottom:140px;
-        padding:160 39 40 41px;
+        padding:160 0 40 0px;
+    @media screen and (min-width: 480px){
+        width:480px;
     }
     @media screen and (min-width: $tablet) {
-        width: 224px;
+        width: calc((100% - 64px)/3);
         height: 473px;
         margin-bottom: 0;
-        padding:118 32 40 32px;
+        padding:118 0 40 0px;
     }
     @media screen and (min-width: $desktop) {
         width: 368px;
         height: 535px;
         margin-bottom: 0;
-        padding:165 63 60 64px;
+        padding:165 0 60 0px;
         }
         }
 .products__card::before {
     position:absolute;
-    transform: translatey(-140px);
     top:0;
-    left:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display:block;
     content:"";    
      
@@ -82,12 +104,17 @@
         width: 224px;
         height: 224px;
         background-size: 224px 224px;
+        top: -140px;
+    left: 50%;
+    transform: translate(-50%)
     }
     @media screen and (min-width: $desktop) {
         width: 368px;
         height: 394px;
         background-size: 368px 394px;
-        transform: translatey(-261px);
+        left: 100%;
+        top:-261px;
+        transform: translate(-100%);
     }
 }
 @media screen and (min-width: $mobile) {
@@ -174,15 +201,16 @@ screen and (min-resolution: 2dppx){
     background-position: left 0 top 0, left 10px top 0, right 0 top 0;
     @media screen and (min-width: $mobile){
         top:215px;
-        left:127px;
+        left: 50%;
+    transform: translate(-50%,-50%);
     }
     @media screen and (min-width: $tablet){
     top:173px;
-    left:99px;
+   
     }
-        @media screen and (min-width: $desktop) {
+     @media screen and (min-width: $desktop) {
             top:231px;
-            left:172px;
+          
         }
     }   
 .products__title{
@@ -215,16 +243,22 @@ screen and (min-resolution: 2dppx){
         height: 124px;
         line-height: 1.65;
         font-size: 14px;
+        padding-left:40px;
+        padding-right: 40px;
     }
     @media screen and (min-width: $tablet){
         height: 150px;
         line-height: 1.78;
         font-size: 14px;
+        padding-left:32px;
+        padding-right: 32px;
     }
     @media screen and (min-width: $desktop){
         height: 106px;
         line-height: 1.75;
         font-size: 16px;
+        padding-left:63px;
+        padding-right: 63px;
     }
 }
 
@@ -237,21 +271,6 @@ background-color: $products-milkshakes;
     margin-bottom: 0;
 }
 }
-.products__content {
-    @media screen and (min-width: $mobile){
-    margin-top:148px;
-}
-@media screen and (min-width: $tablet){
-    margin-top:158px;
-    display:flex;
-    gap:16px;
-}
-@media screen and (min-width: $desktop){
-    margin-top:281px;
-    display:flex;
-    gap:32px;
-}
-}
 .products__button {
     width: 40px;
     height: 40px;
@@ -259,14 +278,22 @@ background-color: $products-milkshakes;
     background-size: contain;
     border:none;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:32px;
+    margin-bottom:0;
     @media screen and (min-width: $mobile){
-        margin: 32px 81 0 79px;
+        // margin: 32px 81 0 79px;
+        // margin-left: 120px;
+        // margin-right: 120px;
     }
     @media screen and (min-width: $tablet){
-        margin:32 60 0 60px;
+        // margin-left: 92px;
+        // margin-right: 92px;
     }
     @media screen and (min-width: $desktop){
-        margin:60 100 0 100px;
+        // margin-left: 164px;
+        // margin-right: 164px;
     }
     @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
