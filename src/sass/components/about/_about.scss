@@ -79,20 +79,28 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
-//   width: 220px;
+
+
+
+ 
+
   margin-bottom: 40px;
   text-align: left;
   @include mq(tab-only) {
     font-size: 14px;
     line-height: 1.78;
-   //  width: 334px;
+
+
   }
 
   @include mq(desc) {
     letter-spacing: 0.04em;
 
     text-align: left;
-   //  width: 463px;
+
+
+    width: 463px;
+
 
     font-size: 16px;
     line-height: 1.75;
@@ -108,7 +116,10 @@
   font-size: 14px;
   line-height: 1.58;
   letter-spacing: 0.04em;
-//   width: 220px;
+
+
+  width: 220px;
+
   text-align: left;
   margin-bottom: 40px;
 
@@ -118,13 +129,18 @@
   }
 
   @include mq(tab-only) {
-   //  width: 334px;
+
+    width: 334px;
+
     line-height: 1.78;
   }
 
   @include mq(desc) {
     text-align: left;
-   //  width: 463px;
+
+
+    width: 463px;
+
     line-height: 1.92;
   }
 }
@@ -179,7 +195,9 @@
     margin-bottom: 60px;
   }
 }
+
 .about {
+
   @include mq(desc) {
     display: flex;
     background-image: url(../images/advantages/desc-milk.png);
@@ -193,6 +211,7 @@
     }
   }
 }
+
 .about__content{
   padding-right: 60px;
   @include mq(tab-only){
@@ -202,6 +221,7 @@
    padding-right:100px;
   }
 }
+
 
 .about__description-text {
   display: flex;

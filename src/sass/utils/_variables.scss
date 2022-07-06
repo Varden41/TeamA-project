@@ -27,6 +27,7 @@ $products-milkshakes: #C2E297;
 $about-subtext: #FFA5BA;
 $about-title: #D41443;
 $about-text: #FFFFFF;
+$about-hover: #ECEBEB;
 
 // Advantages
 $advantages-subtext: #FFA5BA;
@@ -34,7 +35,8 @@ $advantages-title: #D41443;
 $advantages-text: #000000;
 
 // Gallery
-
+$gallery-bgr:#FFFFFF;;
+$gallery-bgr2:#FFF5F6;
 // Customer Reviews
 $customer-reviews-text: #000000;
 
@@ -46,7 +48,7 @@ $contacts-text: #907E82;
 $contacts-time: #FFA5BA;
 
 // Footer
-$footer-subtitle: #FFA5BA;
+$footer-subtitle: hsl(346, 100%, 82%);
 $footer-title: #D41443;
 $footer-copyright: #907E82;
 $footer-contacts: #000000;
