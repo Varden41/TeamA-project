@@ -2,8 +2,10 @@ body.modal-open-header {
   overflow: hidden;
 }
 .page-header {
+  position: absolute;
+  width: 100%;
   padding-top: 8px;
-  background-color: $header-background;
+  background-color: transparent;
   // overflow: hidden;
 
   @media screen and (min-width: $tablet) {
