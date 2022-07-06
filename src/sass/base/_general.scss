@@ -27,10 +27,12 @@ ul {
 button {
   cursor: pointer;
 }
+
 body {
   font-family: $Primaryfont;
   background-color: $background-main;
   color: $text-primary;
+
   &.menu-open .page-header {
     overflow: hidden;
   }
@@ -42,14 +44,21 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    width: 100vw;
   }
+
+  @media screen and (min-width: $mobile2) {
+    width: $mobile2;
+  }
+
   @media screen and (min-width: $tablet) {
     width: $tablet;
     padding-left: 16px;
     padding-right: 16px;
   }
+
   @media screen and (min-width: $desktop) {
     width: $desktop;
   }
