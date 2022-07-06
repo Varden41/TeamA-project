@@ -1,3 +1,30 @@
+.about {
+ @include mq(mob-only){
+   background-image: url(../images/about/about-small-desc.png),
+   url(../images/about/about-big-desc.png);
+ }
+  background-repeat: no-repeat;
+  background-position: left 20px top 520px,
+  right 20px top 500px;
+  
+  background-size: 220px,
+  230px;
+
+  @include mq(retina){
+   background-image: url(../images/about/about-small@2x.png),
+   url(../images/about/about-big@2x.png);
+  }
+  @include mq(tab-only){
+   background-image: none;
+  }
+
+  @include mq(desc){
+   background-position: left 50px top 190px, right 0px top 155px;
+      background-size: 650px, 700px;
+  }
+}
+
+
 .about__pretitle,
 .about__title {
   text-align: center;
@@ -73,17 +100,6 @@
 //       margin-bottom:60px;
 //    }
 // }
-.about__content {
-   padding-right: 60px;
-
-   @include mq(tab-only) {
-      padding-right: 34px;
-   }
-
-   @include mq(desc) {
-      padding-right: 100px;
-   }
-}
 .text__content1 {
   font-family: $Primaryfont;
   color: $advantages-text;
@@ -91,7 +107,11 @@
   font-size: 12px;
   line-height: 1.58;
 
-margin-bottom: 40px;
+
+
+ 
+
+  margin-bottom: 40px;
   text-align: left;
   @include mq(tab-only) {
     font-size: 14px;
@@ -105,7 +125,11 @@ margin-bottom: 40px;
 
     text-align: left;
 
-font-size: 16px;
+
+ 
+
+
+    font-size: 16px;
     line-height: 1.75;
 
     margin-bottom: 32px;
@@ -142,7 +166,7 @@ font-size: 16px;
     text-align: left;
 
 
-  
+   
 
     line-height: 1.92;
   }
@@ -199,23 +223,16 @@ font-size: 16px;
   }
 }
 
-.about {
 
-  @include mq(desc) {
-    display: flex;
-    background-image: url(../images/advantages/desc-milk.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-inline: auto;
-
-    @include mq(retina) {
-      background-image: url(../images/advantages/desc-milk@2x.png);
-    }
+.about__content{
+  padding-right: 60px;
+  @include mq(tab-only){
+   padding-right:34px;
+  }
+  @include mq(desc){
+   padding-right:100px;
   }
 }
-
-
 
 
 .about__description-text {
@@ -240,17 +257,7 @@ font-size: 16px;
   }
 }
 .about__box {
-  @include mq(mob-only) {
-    background-image: url(../images/advantages/mob-milk.png);
-    background-repeat: no-repeat;
-    background-position: 25% 25%;
-    background-size: contain;
-    margin-inline: auto;
-
-    @include mq(retina) {
-      background-image: url(../images/advantages/mob-milk@2x.png);
-    }
-  }
+//  
   @include mq(tab-only) {
     margin-left: 32px;
   }
