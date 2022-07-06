@@ -19,6 +19,8 @@
   }
 
   @include mq(desc){
+   background-image: url(../images/about/about-small-desc.png),
+   url(../images/about/about-big-desc.png);
    background-position: left 50px top 190px, right 0px top 155px;
       background-size: 650px, 700px;
   }
