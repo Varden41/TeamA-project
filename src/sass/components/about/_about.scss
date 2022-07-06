@@ -4,8 +4,8 @@
    url(../images/about/about-big-desc.png);
  }
   background-repeat: no-repeat;
-  background-position: left 20px top 520px,
-  right 20px top 500px;
+  background-position: left 0px top 520px,
+  right 0px top 500px;
   
   background-size: 220px,
   230px;
@@ -21,7 +21,7 @@
   @include mq(desc){
    background-image: url(../images/about/about-small-desc.png),
    url(../images/about/about-big-desc.png);
-   background-position: left 50px top 190px, right 0px top 155px;
+   background-position: left 0px top 190px, right 0px top 155px;
       background-size: 650px, 700px;
   }
 }
